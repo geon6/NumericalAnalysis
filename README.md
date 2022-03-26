@@ -4,7 +4,8 @@
 todo:
 * Linear Equation  
   * [x] Gauss Elimination
-  * [ ] LU Decomposition
+  * [x] Elimination with Column Pivoting
+  * [x] LU Decomposition
   * [ ] Cholesky Decomposition
   * [ ] Jacobi Iteration
   * [ ] Gauss-Seidel Iteration

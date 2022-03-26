@@ -5,6 +5,10 @@
 Eigen::Vector3f GaussElimination(Eigen::Matrix3f A, Eigen::Vector3f b); 
 
 int main() {
+    //      A       x     b         ans
+    //   2  2  2    x1    1        -0.5
+    //   3  2  4    x2   0.5         1
+    //   1  3  9    x3   2.5         0
     Eigen::Matrix3f A;
     A << 2.0f, 2.0f, 2.0f,
          3.0f, 2.0f, 4.0f,
@@ -23,7 +27,7 @@ Eigen::Vector3f GaussElimination(Eigen::Matrix3f A, Eigen::Vector3f b) {
     // elimination process
     for (int i = 0; i < 2; i++) {
         for (int j = i + 1; j < 3; j++) {
-            float m = A(j, i) / A(i , i);
+            float m = A(j, i) / A(i, i);
             A(j, i) = 0;
             b(j) = b(j) - m * b(i);
             for (int k = i + 1; k < 3; k++) {
