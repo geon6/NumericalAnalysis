@@ -14,7 +14,7 @@ int main() {
     Eigen::Vector4f b;
     b << 1.0f, 1.0f, 1.0f, 1.0f;
 
-    SOR(A, b, 1.3f, 10);
+    SOR(A, b, 1.3f, 100, 0.000001f);
 }
 
 Eigen::Vector4f SOR(Eigen::Matrix4f A, Eigen::Vector4f b, float w, int n, float e) {
@@ -23,7 +23,6 @@ Eigen::Vector4f SOR(Eigen::Matrix4f A, Eigen::Vector4f b, float w, int n, float 
     std::cout << "x(0): " << x.transpose() << std::endl;
     for (int k = 0; k < n; k++) {
         float sum[4] = {0};
-        float error = 0.0f;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 if (j < i) {
@@ -32,14 +31,11 @@ Eigen::Vector4f SOR(Eigen::Matrix4f A, Eigen::Vector4f b, float w, int n, float 
                     sum[i] += p(j) * A(i, j);
                 }
             }
-            // why the dx = w ???
             float dx = w / A(i, i) * (b(i) - sum[i]);
-            if (std::abs(dx) > error) {
-                error = std::abs(dx);
-            }
             x(i) = (1 - w) * p(i) + dx;
         }
         std::cout << "x(" << k + 1 << "): " << x.transpose() << std::endl;
+        float error = (p-x).norm();
         std::cout << "error: " << error << std::endl;
         if (error < e) {
             return x;
