@@ -8,5 +8,5 @@ todo:
   * [x] LU Decomposition
   * [x] Cholesky Decomposition
   * [x] Jacobi Iteration
-  * [ ] Gauss-Seidel Iteration
+  * [x] Gauss-Seidel Iteration
   * [ ] SOR
