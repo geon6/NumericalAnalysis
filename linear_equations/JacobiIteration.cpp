@@ -13,7 +13,7 @@ int main() {
 
     Eigen::Vector4f b;
     b << 6.0f, 25.0f, -11.0f, 15.0f;
-    JacobiIteration(A, b, 10, 0.0001f);
+    JacobiIteration(A, b, 100, 0.000000000001f);
 }
 
 Eigen::Vector4f JacobiIteration(Eigen::Matrix4f A, Eigen::Vector4f b, int n, float e) {
