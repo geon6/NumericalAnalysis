@@ -31,7 +31,7 @@ Eigen::Vector3f ColumnPivotingElimination(Eigen::Matrix3f A, Eigen::Vector3f b) 
                 pivot_idx = p;
             }
         }
-        // swap the matrix A and vector v
+        // swap the matrix A and vector b
         A.row(i).swap(A.row(pivot_idx));
         b.row(i).swap(b.row(pivot_idx));
         // elimination
