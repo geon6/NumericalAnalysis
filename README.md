@@ -6,7 +6,7 @@ todo:
   * [x] Gauss Elimination
   * [x] Elimination with Column Pivoting
   * [x] LU Decomposition
-  * [ ] Cholesky Decomposition
+  * [x] Cholesky Decomposition
   * [ ] Jacobi Iteration
   * [ ] Gauss-Seidel Iteration
   * [ ] SOR
