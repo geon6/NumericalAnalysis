@@ -9,4 +9,4 @@ todo:
   * [x] Cholesky Decomposition
   * [x] Jacobi Iteration
   * [x] Gauss-Seidel Iteration
-  * [ ] SOR
+  * [x] SOR
