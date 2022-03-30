@@ -10,3 +10,7 @@ todo:
   * [x] Jacobi Iteration
   * [x] Gauss-Seidel Iteration
   * [x] SOR
+* Eigen Value
+  * [ ] Power Method
+  * [ ] Inverse Power Method
+  * [ ] QR method
