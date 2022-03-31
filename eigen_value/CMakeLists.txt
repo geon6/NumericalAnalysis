@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 
-find_package(Eigen3 CONFIG REQUIRED)
+aux_source_directory(. ALL_SOURCE)
 
-set(CMAKE_CXX_STANDARD 17)
+link_eigen("${ALL_SOURCE}")
