@@ -1,6 +1,7 @@
 #include <iostream>
 #include <Eigen/Dense>
 
+// get the max eigen value l and its eigen vector q of A 
 std::tuple<float, Eigen::Vector3f> PowerMethod(Eigen::Matrix3f A, Eigen::Vector3f q, int times = 50);
 
 int main() {
@@ -18,13 +19,13 @@ int main() {
 
 std::tuple<float, Eigen::Vector3f> PowerMethod(Eigen::Matrix3f A, Eigen::Vector3f q, int times) {
     Eigen::Vector3f y = A * q;
-    Eigen::Vector3f qi = y.normalized();
-    float l = 0.0f;
+    float l = y.array().abs().maxCoeff();
+    Eigen::Vector3f qi = y / l;
     for (int i = 1; i <= times; i++) {
         std::cout << "times " << i << ", l: " << l << ", qi: " << qi.transpose() << std::endl;
         y = A * qi;
-        l = y[0] / qi[0];
-        qi = y.normalized();
+        l = y.array().abs().maxCoeff();
+        qi = y / l;
     }
     return { l, qi };
 }
