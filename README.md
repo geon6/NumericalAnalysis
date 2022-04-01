@@ -12,5 +12,5 @@ todo:
   * [x] SOR
 * Eigen Value
   * [x] Power Method
-  * [ ] Inverse Power Method
+  * [x] Inverse Power Method
   * [ ] QR method
