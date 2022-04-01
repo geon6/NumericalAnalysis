@@ -11,6 +11,6 @@ todo:
   * [x] Gauss-Seidel Iteration
   * [x] SOR
 * Eigen Value
-  * [ ] Power Method
+  * [x] Power Method
   * [ ] Inverse Power Method
   * [ ] QR method
