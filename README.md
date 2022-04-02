@@ -14,5 +14,5 @@ todo:
   * [x] Power Method
   * [x] Inverse Power Method
   * [ ] QR method
-    * [ ] Givens Transformation
+    * [*] Givens Transformation
     * [ ] Householder Transformation
