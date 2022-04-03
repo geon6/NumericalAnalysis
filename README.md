@@ -13,6 +13,14 @@ todo:
 * Eigen Value
   * [x] Power Method
   * [x] Inverse Power Method
-  * [ ] QR method
+  * QR method
     * [*] Givens Transformation
     * [ ] Householder Transformation
+* Interpolation
+  * [ ] Lagrange Interpolation
+  * [ ] Hermite Interpolation
+  * [ ] Newton Interpolation
+  * [ ] Spline
+* Numerical Integration
+* Ordinary Differential Equation
+* Nonlinear Equation
