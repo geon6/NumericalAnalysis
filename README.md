@@ -14,7 +14,7 @@ todo:
   * [x] Power Method
   * [x] Inverse Power Method
   * QR method
-    * [*] Givens Transformation
+    * [x] Givens Transformation
     * [ ] Householder Transformation
 * Interpolation
   * [ ] Lagrange Interpolation
