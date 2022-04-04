@@ -17,6 +17,6 @@ macro(link_eigen)
     endforeach(SOURCE ${ALL_SOURCE})
 endmacro(link_eigen)
 
-add_subdirectory("linear_equations")
+add_subdirectory("linear_equation")
 
 add_subdirectory("eigen_value")

@@ -16,6 +16,7 @@ todo:
   * QR method
     * [x] Givens Transformation
     * [ ] Householder Transformation
+* Nonlinear Equation
 * Interpolation
   * [ ] Lagrange Interpolation
   * [ ] Hermite Interpolation
@@ -23,4 +24,3 @@ todo:
   * [ ] Spline
 * Numerical Integration
 * Ordinary Differential Equation
-* Nonlinear Equation
