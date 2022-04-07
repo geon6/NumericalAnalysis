@@ -1,5 +1,4 @@
 #include <iostream>
-#include <Eigen/Dense>
 
 // assume that function f = 4 + 1/3 * sin(2x), x0 = 4, k_max = 20, e = 1e-7
 typedef float(*func) (float);

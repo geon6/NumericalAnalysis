@@ -18,6 +18,8 @@ todo:
     * [ ] Householder Transformation
 * Nonlinear Equation
   * [x] Fixed Point Iteration
+  * [x] Bisection Method
+  * [ ] Newton Method
 * Interpolation
   * [ ] Lagrange Interpolation
   * [ ] Hermite Interpolation
