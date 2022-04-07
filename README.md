@@ -17,6 +17,7 @@ todo:
     * [x] Givens Transformation
     * [ ] Householder Transformation
 * Nonlinear Equation
+  * [x] Fixed Point Iteration
 * Interpolation
   * [ ] Lagrange Interpolation
   * [ ] Hermite Interpolation

@@ -18,5 +18,5 @@ macro(link_eigen)
 endmacro(link_eigen)
 
 add_subdirectory("linear_equation")
-
 add_subdirectory("eigen_value")
+add_subdirectory("nonlinear_equation")
