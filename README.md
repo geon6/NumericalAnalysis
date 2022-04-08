@@ -19,7 +19,7 @@ todo:
 * Nonlinear Equation
   * [x] Fixed Point Iteration
   * [x] Bisection Method
-  * [ ] Newton Method
+  * [x] Newton Method
 * Interpolation
   * [ ] Lagrange Interpolation
   * [ ] Hermite Interpolation
