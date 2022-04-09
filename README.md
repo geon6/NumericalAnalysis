@@ -20,6 +20,7 @@ todo:
   * [x] Fixed Point Iteration
   * [x] Bisection Method
   * [x] Newton Method
+  * [x] Secant Method
 * Interpolation
   * [ ] Lagrange Interpolation
   * [ ] Hermite Interpolation
