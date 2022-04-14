@@ -28,3 +28,4 @@ todo:
   * [ ] Spline
 * Numerical Integration
 * Ordinary Differential Equation
+  * [x] Euler Method
