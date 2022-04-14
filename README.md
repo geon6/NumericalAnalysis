@@ -30,3 +30,4 @@ todo:
 * Ordinary Differential Equation
   * [x] Euler Method
   * [x] Predictor Corrector Method
+  * [x] Runge-Kutta (rank 4)

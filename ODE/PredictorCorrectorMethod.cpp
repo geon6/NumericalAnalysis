@@ -17,7 +17,7 @@ std::tuple<float, float> PredictorCorrectorMethod(func2 f, float t0, float T, fl
         float t1 = t0 + h;
         float k1 = f(t0, u0);
         float k2 = f(t1, u0 + h * k1);        
-        float u1 = u0 + (k1 + k2) * h / 2;
+        float u1 = u0 + (k1 + k2) * h / 2.0f;
         t0 = t1;
         u0 = u1;
     }
