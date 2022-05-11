@@ -1,8 +1,7 @@
 #include <iostream>
 
 // assume that function f = 4 + 1/3 * sin(2x), x0 = 4, k_max = 20, e = 1e-7
-typedef float(*func) (float);
-std::tuple<float, int, float> FixedPointIteration(func f, float x0, int times, float e);
+std::tuple<float, int, float> FixedPointIteration(float f(float), float x0, int times, float e);
 
 int main() {
     auto f = [](float x) {
@@ -14,7 +13,7 @@ int main() {
     std::cout << "error: " << error << std::endl;
 }
 
-std::tuple<float, int, float> FixedPointIteration(func f, float x0, int times, float e) {
+std::tuple<float, int, float> FixedPointIteration(float f(float), float x0, int times, float e) {
     float error = e + 1;
     float x = x0;
     int k;

@@ -1,8 +1,7 @@
 #include <iostream>
 
-typedef float(*func)(float);
 // i ignore the error
-float SecantMethod(func f, float x0, float x1, float e, int times);
+float SecantMethod(float f(float), float x0, float x1, float e, int times);
 
 int main() {
     auto f = [](float x) {
@@ -12,7 +11,7 @@ int main() {
     std::cout << x << std::endl;
 }
 
-float SecantMethod(func f, float x0, float x1, float e, int times) {
+float SecantMethod(float f(float), float x0, float x1, float e, int times) {
     float u = f(x0), v = f(x1);
     for (int k = 0; k < times; k++) {
         if (abs(u) < abs(v)) {

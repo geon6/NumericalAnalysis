@@ -1,8 +1,7 @@
 #include <iostream>
 
 // assume that function f = 4 + 1/3 * sin(2x), x0 = 4, k_max = 20, e = 1e-7
-typedef float(*func) (float);
-std::tuple<float, int> BisectionMethod(func f, float a, float b, int times, float e);
+std::tuple<float, int> BisectionMethod(float f(float), float a, float b, int times, float e);
 
 int main() {
     auto f = [](float x) {
@@ -14,7 +13,7 @@ int main() {
     std::cout << "k: " << k << std::endl;
 }
 
-std::tuple<float, int> BisectionMethod(func f, float a, float b, int times, float e) {
+std::tuple<float, int> BisectionMethod(float f(float), float a, float b, int times, float e) {
     int k;
     float c;
     for (k = 0; k < times; k++) {
