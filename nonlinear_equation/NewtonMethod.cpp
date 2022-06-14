@@ -7,7 +7,7 @@
  * @param times: max iterate times
  * @param e: max error
  */
-std::tuple<float, int> NewtonMethod(float f(float), float f(float), float x0, float times, float e);
+std::tuple<float, int> NewtonMethod(float f(float), float df(float), float x0, float times, float e);
 
 int main() {
     auto f = [](float x) {
@@ -22,7 +22,7 @@ int main() {
     std::cout << "k: " << k << std::endl;
 }
 
-std::tuple<float, int> NewtonMethod(float f(float), float f(float), float x0, float times, float e) {
+std::tuple<float, int> NewtonMethod(float f(float), float df(float), float x0, float times, float e) {
     float x1;
     int k;
     for (k = 0; k < times; k++) {
